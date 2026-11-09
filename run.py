@@ -37,7 +37,7 @@ with sqlite3.connect(":memory:") as db:
     results = result.fetchall()
     assert all(0 <= active <= size and size == lost + active for _, _, _, size, lost, active, _ in results)
     with (root / "reports/retention.csv").open("w", newline="") as output:
-        writer = csv.writer(output)
+        writer = csv.writer(output, lineterminator="\n")
         writer.writerow(columns)
         writer.writerows(results)
     print(f"Analyzed {len(rows):,} subscriptions and wrote {len(results)} cohort results.")
