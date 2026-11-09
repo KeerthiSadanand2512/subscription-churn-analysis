@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 402" role="img" aria-labelledby="title desc">
+<title id="title">Subscription retention by plan</title>
+<desc id="desc">Customer-weighted retention for the same six simulated signup cohorts at months 1, 3, 6 and 12. Annual: 100.00%, 100.00%, 100.00%, 97.25%. Monthly: 89.42%, 74.91%, 56.14%, 29.52%.</desc>
+<rect width="770" height="402" rx="14" fill="#f8fafc"/>
+<g font-family="system-ui, sans-serif" fill="#16273a">
+<text x="34" y="38" font-size="24" font-weight="700">Subscription retention by plan</text>
+<text x="34" y="62" font-size="14">Same six simulated signup cohorts at each milestone</text>
+<path d="M 92 326 H 620" stroke="#ccd6e0"/><text x="78" y="331" font-size="13" text-anchor="end">0%</text>
+<path d="M 92 266 H 620" stroke="#ccd6e0"/><text x="78" y="271" font-size="13" text-anchor="end">25%</text>
+<path d="M 92 206 H 620" stroke="#ccd6e0"/><text x="78" y="211" font-size="13" text-anchor="end">50%</text>
+<path d="M 92 146 H 620" stroke="#ccd6e0"/><text x="78" y="151" font-size="13" text-anchor="end">75%</text>
+<path d="M 92 86 H 620" stroke="#ccd6e0"/><text x="78" y="91" font-size="13" text-anchor="end">100%</text>
+<text x="92" y="350" font-size="14" text-anchor="middle">1</text>
+<text x="188" y="350" font-size="14" text-anchor="middle">3</text>
+<text x="332" y="350" font-size="14" text-anchor="middle">6</text>
+<text x="620" y="350" font-size="14" text-anchor="middle">12</text>
+<text x="356" y="377" font-size="14" text-anchor="middle">Months since signup</text>
+<polyline fill="none" stroke="#08766d" stroke-width="3" points="92,86 188,86 332,86 620,92.59793814432993"/>
+<circle cx="92" cy="86" r="4" fill="#08766d"/>
+<circle cx="188" cy="86" r="4" fill="#08766d"/>
+<circle cx="332" cy="86" r="4" fill="#08766d"/>
+<circle cx="620" cy="92.59793814432993" r="4" fill="#08766d"/>
+<text x="632" y="97.59793814432993" font-size="14" font-weight="600" fill="#08766d">Annual 97.25%</text>
+<polyline fill="none" stroke="#2359a8" stroke-width="3" points="92,111.3924914675768 188,146.2047781569966 332,191.25597269624575 620,255.1467576791809"/>
+<circle cx="92" cy="111.3924914675768" r="4" fill="#2359a8"/>
+<circle cx="188" cy="146.2047781569966" r="4" fill="#2359a8"/>
+<circle cx="332" cy="191.25597269624575" r="4" fill="#2359a8"/>
+<circle cx="620" cy="255.1467576791809" r="4" fill="#2359a8"/>
+<text x="632" y="260.1467576791809" font-size="14" font-weight="600" fill="#2359a8">Monthly 29.52%</text>
+</g>
+</svg>

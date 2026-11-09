@@ -12,4 +12,8 @@ A cohort is a group of customers who signed up in the same month on the same pla
 
 ## What the simulation shows
 
+![Simulated retention at months 1, 3, 6, and 12 for monthly and annual plans](reports/retention-by-plan.svg)
+
+*Each point uses the same six signup months. The gap reflects the simulation’s cancellation rules.*
+
 At month 12, 566 of 582 annual subscribers (97.25%) and 173 of 586 monthly subscribers (29.52%) were still active across the six eligible signup months. These are customer-weighted rates calculated from the underlying counts. The generator gives monthly plans a 9% cancellation probability each month and annual plans a 3.5% probability at renewal. Those assumptions explain the gap. The analysis demonstrates how to measure retention with different renewal schedules. Estimating the effect of plan choice would require real subscription histories and a design that accounts for differences between customers who choose each plan.
