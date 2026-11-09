@@ -1,0 +1,32 @@
+name: Subscription retention
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - run.py
+      - 'sql/**'
+      - reports/retention.csv
+      - .github/workflows/retention.yml
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Generate and verify cohort results
+        run: |
+          python3 run.py
+          git diff --exit-code -- reports/retention.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cohort-retention
+          path: reports/retention.csv
+          if-no-files-found: error
